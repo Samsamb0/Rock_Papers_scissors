@@ -24,11 +24,7 @@ h1 {
 #logo {
   display: flex;
 }
-#first {
-  width: 60px;
-  height: 90px;
-  align-self: center;
-}
+
 #second {
   width: 280px;
   height: 130px;
@@ -83,4 +79,23 @@ main {
 #scoreResult {
   font-size: 1.3em;
   text-align: center;
+}
+/*main*/
+footer {
+  background-color: rgba(1, 1, 1, 0.578);
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Press Start 2P", cursive;
+}
+footer p {
+  margin: 0;
+  color: #fac650;
+  border: 3px white solid;
+  padding: 20px;
+}
+footer a {
+  text-decoration: none;
+  color: #fac650;
 }
