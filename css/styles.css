@@ -88,6 +88,7 @@ footer {
   justify-content: center;
   align-items: center;
   font-family: "Press Start 2P", cursive;
+  border: 3px black solid;
 }
 footer p {
   margin: 0;
