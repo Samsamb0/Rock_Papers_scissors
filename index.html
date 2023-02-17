@@ -14,7 +14,7 @@
       rel="stylesheet"
     />
   </head>
-  <body onload="onload()">
+  <body onload="load()">
     <header>
       <div id="logo">
         <img id="second" src="images/Logo_Hunter_x_Hunter.svg.png" />
@@ -27,29 +27,27 @@
         <h3 id="scoreResult">Who's gonna win ?</h3>
         <div id="emote">
           <div id="player">
-            <img src="images/questionmark.png" />
-            <p id="playerResult">Player:0</p>
+            <div id="pEmote">
+              <img src="images/questionmark.png" />
+            </div>
+            <p id="pResult">Player:0</p>
           </div>
           <div id="computer">
-            <img src="images/questionmark.png" />
-            <p id="computerResult">Computer:0</p>
+            <div id="cEmote">
+              <img src="images/questionmark.png" />
+            </div>
+            <p id="cResult">Computer:0</p>
           </div>
         </div>
       </section>
       <section id="choice">
-        <button id="rock" onclick="computerPlay();playRound(player, computer);">
+        <button id="rock" onclick="computerPlay();playRound();">
           <img src="images/rock.jpg" />
         </button>
-        <button
-          id="paper"
-          onclick="computerPlay();playRound(player, computer);"
-        >
+        <button id="paper" onclick="computerPlay();playRound();">
           <img src="images/paper.jpg" />
         </button>
-        <button
-          id="scissors"
-          onclick="computerPlay();playRound(player, computer);"
-        >
+        <button id="scissors" onclick="computerPlay();playRound();">
           <img src="images/scissors.jfif" />
         </button>
       </section>
