@@ -1,32 +1,25 @@
+let player = "";
+
 /*variables globales*/
-let player;
-let computer;
-function onload() {
-  /*Initialisation de variables*/
+
+function load() {
+  /*initialisation of variables*/
   let rock = document.getElementById("rock");
   let paper = document.getElementById("paper");
   let scissors = document.getElementById("scissors");
-  /*EVENT*/
+  let playerEmote = document.getElementById("pEmote");
+
+  /*Event*/
   rock.addEventListener("click", function () {
     player = "rock";
-  });
-  scissors.addEventListener("click", function () {
-    player = "scissors";
+    playerEmote.innerHTML = "<img src='images/pierre.png'></img>";
   });
   paper.addEventListener("click", function () {
     player = "paper";
+    playerEmote.innerHTML = "<img src='images/feuille.png'></img>";
   });
-}
-
-function computerPlay() {
-  let random = parseFloat((Math.random() * 100).toFixed(2));
-  if (random < 33.33) {
-    computer = "rock";
-  } else if (random >= 33.33 && random < 66.67) {
-    computer = "paper";
-  } else if (random >= 66.67) {
-    computer = "scissors";
-  } else {
-    console.log("BIG PROBLEM");
-  }
+  scissors.addEventListener("click", function () {
+    player = "scissors";
+    playerEmote.innerHTML = "<img src='images/ciseaux.png'></img>";
+  });
 }
